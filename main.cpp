@@ -1,4 +1,5 @@
 #include "SqlLinker.h"
+#include "Socks.h"
 int main() {
     WSADATA data;
     WSAStartup(MAKEWORD(2,2),&data);

@@ -11,8 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89e89e07-0c16-4cf3-8346-52375e0304d1" name="Default Changelist" comment="">
+    <list default="true" id="89e89e07-0c16-4cf3-8346-52375e0304d1" name="Default Changelist" comment="ver0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socks.h" beforeDir="false" afterPath="$PROJECT_DIR$/Socks.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +41,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -76,7 +79,7 @@
       <workItem from="1568782373018" duration="40000" />
       <workItem from="1568783226431" duration="2687000" />
       <workItem from="1568860605083" duration="3730000" />
-      <workItem from="1568876282006" duration="2032000" />
+      <workItem from="1568876282006" duration="5290000" />
     </task>
     <servers />
   </component>
@@ -93,5 +96,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ver0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver0.0" />
   </component>
 </project>

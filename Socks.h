@@ -6,11 +6,15 @@
 #define SERVERS_SOCKS_H
 
 #include "winsock2.h"
+#include "iostream"
+using namespace std;
 
 class Socks {
 protected:
     SOCKET TCPLinker;   //socket通信器
     sockaddr_in Address;    //通信端口
+    SOCKET client;      //socket客户端
+    SOCKADDR clientAdder;       //客户端地址
     int adderLen;
 public:
     Socks();
