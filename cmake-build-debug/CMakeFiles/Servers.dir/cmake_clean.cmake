@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Servers.dir/main.obj"
   "CMakeFiles/Servers.dir/SqlLinker.obj"
-  "CMakeFiles/Servers.dir/Date.obj"
   "CMakeFiles/Servers.dir/Socks.obj"
   "Servers.pdb"
   "Servers.exe"

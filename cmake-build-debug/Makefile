@@ -123,21 +123,6 @@ Servers/fast:
 .PHONY : Servers/fast
 
 # target to build an object file
-Date.obj:
-	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/Date.obj
-.PHONY : Date.obj
-
-# target to preprocess a source file
-Date.i:
-	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/Date.i
-.PHONY : Date.i
-
-# target to generate assembly for a file
-Date.s:
-	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/Date.s
-.PHONY : Date.s
-
-# target to build an object file
 Socks.obj:
 	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/Socks.obj
 .PHONY : Socks.obj
@@ -191,9 +176,6 @@ help:
 	@echo ... Servers
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Date.obj
-	@echo ... Date.i
-	@echo ... Date.s
 	@echo ... Socks.obj
 	@echo ... Socks.i
 	@echo ... Socks.s

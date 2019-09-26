@@ -1,9 +1,6 @@
 #include "SqlLinker.h"
-#include "Socks.h"
+//#include "Socks.h"
 int main() {
     SqlLinker linker;
-    Socks a;
-    string tmp=a.ListenTo();
-    cout<<tmp;
-    a.SendMassage("123");
+    linker.CreateNewStudent("张志强",1,1,"2000-01-01","饮水机",'M',123456);
 }

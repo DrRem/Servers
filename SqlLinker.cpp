@@ -6,24 +6,23 @@
 
 
 SqlLinker::SqlLinker() {
-    MYSQL data;
-    mysql_init(&data);
-    if(mysql_real_connect(&data,"localhost","root","toor",NULL,3306,NULL,0))    //链接数据库
+    mysql_init(&this->data);
+    if(mysql_real_connect(&this->data,"localhost","root","admin",NULL,3306,NULL,0))    //链接数据库
     {
         cout<<"Succeed!"<<endl;
     }
     else
     {
-        cout<<"Error:"<<mysql_error(&data)<<endl;
+        cout<<"Error:"<<mysql_error(&this->data)<<endl;
         exit(0);
     }
-    if(mysql_query(&data,"CREATE DATABASE IF NOT EXISTS student;"))     //创建 student库
+    if(mysql_query(&this->data,"CREATE DATABASE IF NOT EXISTS student;"))     //创建 student库
     {
-        cout<<"Error:"<<mysql_error(&data)<<endl;
+        cout<<"Error:"<<mysql_error(&this->data)<<endl;
         exit(0);
     }
-    mysql_query(&data,"USE student");
-    if(mysql_query(&data,"CREATE TABLE IF NOT EXISTS inf("
+    mysql_query(&this->data,"USE student");
+    if(mysql_query(&this->data,"CREATE TABLE IF NOT EXISTS inf("
                          "id int auto_increment primary key,"
                          "passwd int NOT NULL,"
                          "name VARCHAR(25) NOT NULL,"
@@ -32,7 +31,7 @@ SqlLinker::SqlLinker() {
                          "birthday date,"
                          "address VARCHAR(25));"))      //创建inf表
     {
-        cout<<"Error:"<<mysql_error(&data)<<endl;
+        cout<<"Error:"<<mysql_error(&this->data)<<endl;
         exit(0);
     }
     this->id="SELECT * FROM inf WHERE id";
@@ -42,29 +41,23 @@ SqlLinker::SqlLinker() {
     this->sex="SELECT * FROM inf WHERE sex";
     this->birthday="SELECT * FROM inf WHERE birthday";
     this->address="SELECT * FROM inf WHERE address";
-    this->result= nullptr;
-    this->Create="INSERT INTO inf(id,passwd,name,class,sex,birthday,address)VALUES";
+    this->Create="INSERT INTO inf(name,id,class,birthday,address,sex,passwd)VALUES";
     //初始化SQL拼接字符串
 }
 
 SqlLinker::~SqlLinker()
 {
-    mysql_close(&data);     //关闭链接
+    mysql_close(&this->data);     //关闭链接
 }
 
-int SqlLinker::CreateNewStudent(char *name, int id, int Class, Date birthday, char *address, char sex, int passwd)
+int SqlLinker::CreateNewStudent(const char *name, int id, int Class, const char* birthday, const char *address, char sex, int passwd)
 {
-    string sql=this->id+"="+to_string(id)+";";
-    const char *cmd=(char*)sql.data();
-    mysql_query(&data,cmd);
-    this->result=mysql_store_result(&data);     //检查对应ID是否已经存在
-    if(this->result!= nullptr)
-    {
-        return 0;
-    } else{
-        string insert=this->Create+*name+","+to_string(id)+","+to_string(Class)+","+birthday.to_string()+","+*address+","+sex+","+to_string(passwd)+");";
-        char *p=(char*)insert.data();
-        mysql_query(&data,p);   //创建表项
+
+        string insert=this->Create+"('"+name+"',"+to_string(id)+","+to_string(Class)+",'"+birthday+"','"+address+"','"+sex+"',"+to_string(passwd)+");";
+        const char *p=(char*)insert.data();
+        if(mysql_query(&this->data,p)){
+            cout<<"Error :"<<mysql_error(&this->data)<<endl;
+        }
+         //创建表项
         return 1;
-    }
 }

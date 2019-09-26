@@ -15,7 +15,7 @@ link_libraries(libmysql.lib)
 
 link_libraries(ws2_32)
 
-add_executable(Servers main.cpp SqlLinker.cpp SqlLinker.h Date.cpp Date.h Socks.cpp Socks.h)
+add_executable(Servers main.cpp SqlLinker.cpp SqlLinker.h Socks.cpp Socks.h)
 
 target_link_libraries(libmysql.lib)
 

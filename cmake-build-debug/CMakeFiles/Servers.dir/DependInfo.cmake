@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/VSObj/Servers/Date.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/Date.obj"
   "E:/VSObj/Servers/Socks.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj"
   "E:/VSObj/Servers/SqlLinker.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/SqlLinker.obj"
   "E:/VSObj/Servers/main.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/main.obj"
