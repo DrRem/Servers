@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/VSObj/Servers/Date.cpp">
+			<Option target="Servers"/>
+		</Unit>
+		<Unit filename="E:/VSObj/Servers/Date.h">
+			<Option target="Servers"/>
+		</Unit>
 		<Unit filename="E:/VSObj/Servers/Socks.cpp">
 			<Option target="Servers"/>
 		</Unit>
@@ -92,6 +98,12 @@
 			<Option target="Servers"/>
 		</Unit>
 		<Unit filename="E:/VSObj/Servers/SqlLinker.h">
+			<Option target="Servers"/>
+		</Unit>
+		<Unit filename="E:/VSObj/Servers/Student.cpp">
+			<Option target="Servers"/>
+		</Unit>
+		<Unit filename="E:/VSObj/Servers/Student.h">
 			<Option target="Servers"/>
 		</Unit>
 		<Unit filename="E:/VSObj/Servers/main.cpp">

@@ -11,12 +11,18 @@ using namespace std;
 
 class SqlLinker{
 protected:
-    string id,name,Class,birthday,address,sex,passwd,Create;
+    string Create;
     MYSQL data;     //连接器
 public:
+    Socks talk;       //初始化Socket
     SqlLinker();
     ~SqlLinker();
-    int CreateNewStudent(const char* name,int id,int Class,const char* birthday,const char* address,char sex,int passwd);  //添加新成员
+
+    bool CreateNewStudent(const char* name,int id,int Class,const char* birthday,const char* address,char sex,const char* passwd, const char* car);  //添加新成员
+    string SearchStudent(int id);
+    int Display(int Class);
+    bool Login(int id,const char* password);
+    bool IfExist(int id);
 };
 
 

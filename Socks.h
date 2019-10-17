@@ -1,7 +1,3 @@
-//
-// Created by fffei on 2019/9/17.
-//
-
 #ifndef SERVERS_SOCKS_H
 #define SERVERS_SOCKS_H
 

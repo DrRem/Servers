@@ -1,7 +1,3 @@
-//
-// Created by fffei on 2019/9/17.
-//
-
 #include <inaddr.h>
 #include "Socks.h"
 
