@@ -106,6 +106,9 @@
 		<Unit filename="E:/VSObj/Servers/Student.h">
 			<Option target="Servers"/>
 		</Unit>
+		<Unit filename="E:/VSObj/Servers/getlenth.h">
+			<Option target="Servers"/>
+		</Unit>
 		<Unit filename="E:/VSObj/Servers/main.cpp">
 			<Option target="Servers"/>
 		</Unit>

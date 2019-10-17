@@ -8,16 +8,17 @@
 #include "Date.h"
 
 class Student {
-protected:
+public:
     int id,Class;
     string name,passwd,address;
     Date birthday;
     char sex;
-public:
+
+
     Student();
-    Student(const char *name, int id, int Class, int year,int month, int day, char sex, const char* passwd);
+    Student(const char *name, int id, int Class, int year,int month, int day, char sex, const char *address, const char* passwd);
     string serialization();
-    void deserialization();
+    void deserialization(string tmp);
 };
 
 
