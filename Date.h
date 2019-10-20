@@ -5,7 +5,7 @@
 #ifndef SERVERS_DATE_H
 #define SERVERS_DATE_H
 #include "SqlLinker.h"
-#include "getlenth.h"
+#include "get_len.h"
 class Date {
 public:
     int year,month,day;

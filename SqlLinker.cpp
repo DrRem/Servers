@@ -80,8 +80,7 @@ int SqlLinker::Display(int Class) {     //遍历某班全部学生
         return 0;
     }
     result=mysql_store_result(&this->data);
-    int len=mysql_num_fields(result);
-    talk.SendMassage();
+    int len=(int)mysql_num_fields(result);
     while ((row=mysql_fetch_row(result)))
     {
         for (int i = 0;i < len ; i++){

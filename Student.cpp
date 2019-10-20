@@ -49,5 +49,4 @@ Student::Student(const char *name, int id, int Class, int year, int month, int d
     this->birthday.day=day;
     this->address=address;
     this->Class=Class;
-
 }

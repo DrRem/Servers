@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Servers.dir/Socks.obj"
   "CMakeFiles/Servers.dir/SqlLinker.obj"
   "CMakeFiles/Servers.dir/Student.obj"
+  "CMakeFiles/Servers.dir/get_len.obj"
   "CMakeFiles/Servers.dir/main.obj"
   "Servers.exe"
   "Servers.exe.manifest"

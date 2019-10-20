@@ -183,6 +183,21 @@ Student.s:
 .PHONY : Student.s
 
 # target to build an object file
+get_len.obj:
+	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/get_len.obj
+.PHONY : get_len.obj
+
+# target to preprocess a source file
+get_len.i:
+	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/get_len.i
+.PHONY : get_len.i
+
+# target to generate assembly for a file
+get_len.s:
+	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/get_len.s
+.PHONY : get_len.s
+
+# target to build an object file
 main.obj:
 	$(MAKE) -f CMakeFiles\Servers.dir\build.make CMakeFiles/Servers.dir/main.obj
 .PHONY : main.obj
@@ -218,6 +233,9 @@ help:
 	@echo ... Student.obj
 	@echo ... Student.i
 	@echo ... Student.s
+	@echo ... get_len.obj
+	@echo ... get_len.i
+	@echo ... get_len.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/VSObj/Servers/Socks.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj"
   "E:/VSObj/Servers/SqlLinker.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/SqlLinker.obj"
   "E:/VSObj/Servers/Student.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/Student.obj"
+  "E:/VSObj/Servers/get_len.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/get_len.obj"
   "E:/VSObj/Servers/main.cpp" "E:/VSObj/Servers/cmake-build-debug/CMakeFiles/Servers.dir/main.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
