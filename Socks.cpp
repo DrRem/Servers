@@ -12,7 +12,7 @@ Socks::Socks() {
     }
     memset(&this->serverAddress,0, sizeof(this->serverAddress));    //初始化地址
     this->serverAddress.sin_family=PF_INET;   //IPV4
-    this->serverAddress.sin_addr.S_un.S_addr=inet_addr("127.0.0.1");      //地址
+    this->serverAddress.sin_addr.S_un.S_addr=inet_addr("192.168.0.106");      //地址
     this->serverAddress.sin_port=htons(8848);     //端口
     //绑定
     if(bind(this->servers,(const struct sockaddr*)&this->serverAddress,sizeof(this->serverAddress))==SOCKET_ERROR){

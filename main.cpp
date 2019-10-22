@@ -1,6 +1,7 @@
 #include "Student.h"
 #include "Socks.h"
 int main() {
+
     SqlLinker linker;   //初始化SQL
     linker.CreateNewStudent("admin",1,0,"2000-01-01","localhost",'N',"admin","car");
     //创建管理员账户
@@ -40,8 +41,8 @@ int main() {
             }
         }else if (temp[0] == '2'){          //登录
             cout<<"user try to login as normal :"<<endl;
-            string id=car.substr(1,12);
-            string passwd=car.substr(12);
+            string id=car.substr(1,10);
+            string passwd=car.substr(10);
             if(linker.IfExist(stoi(id))){
                 if(linker.Login(stoi(id),passwd.data())){
                     linker.talk.SendMassage((linker.SearchStudent(stoi(id))).data());       //发送序列化字符窜
@@ -60,5 +61,4 @@ int main() {
         }
         car.clear();
     }
-
 }

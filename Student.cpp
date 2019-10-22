@@ -22,20 +22,20 @@ string Student::serialization() {       //序列化学生类
     return tmp;
 }
 
-void Student::deserialization(string tmp) {           //反序列化
-    int i[6];
-    int j=0;
-    while ((i[j]=tmp.find_first_of('+',i[j]))!=string::npos)
+void Student::deserialization(string tmp) {           //反序列化[error!
+    int i[7]={0};
+    int j=1;
+    while ((i[j]=tmp.find('+',i[j-1]+1))!=string::npos)
     {
         j++;
     }
-    this->id = stoi(tmp.substr(0,i[0]-1));
-    this->passwd = tmp.substr(i[0],i[1]-1);
-    this->name = tmp.substr(i[1],i[2]-1);
-    this->Class = stoi(tmp.substr(i[2],i[3]-1));
-    this->sex = tmp[i[3]];
-    this->birthday.de_serialization(tmp.substr(i[4],i[5]-1));
-    this->address = tmp.substr(i[5]);
+    this->id = stoi(tmp.substr(i[0],i[1]-i[0]-1));
+    this->passwd = tmp.substr(i[1]+1,i[2]-i[1]-1);
+    this->name = tmp.substr(i[2]+1,i[3]-i[2]-1);
+    this->Class = stoi(tmp.substr(i[3]+1,i[4]-i[3]-1));
+    this->sex = tmp[i[4]+1];
+    this->birthday.de_serialization(tmp.substr(i[5]+1,i[6]-i[5]-1));
+    this->address = tmp.substr(i[6]+1);
 }
 
 Student::Student(const char *name, int id, int Class, int year, int month, int day, char sex, const char *address,
