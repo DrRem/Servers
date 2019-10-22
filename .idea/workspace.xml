@@ -13,11 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="89e89e07-0c16-4cf3-8346-52375e0304d1" name="Default Changelist" comment="ver0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Date.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Date.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Socks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socks.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Student.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Servers.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Servers.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -106,7 +103,8 @@
       <workItem from="1571555902842" duration="9014000" />
       <workItem from="1571663421499" duration="425000" />
       <workItem from="1571666526131" duration="4092000" />
-      <workItem from="1571725476930" duration="2098000" />
+      <workItem from="1571725476930" duration="11316000" />
+      <workItem from="1571752074562" duration="2390000" />
     </task>
     <servers />
   </component>
@@ -134,9 +132,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Student.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/SqlLinker.cpp</url>
+          <line>113</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

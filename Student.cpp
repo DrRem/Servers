@@ -29,7 +29,7 @@ void Student::deserialization(string tmp) {           //反序列化[error!
     {
         j++;
     }
-    this->id = stoi(tmp.substr(i[0],i[1]-i[0]-1));
+    this->id = stoi(tmp.substr(i[0],i[1]-i[0]));
     this->passwd = tmp.substr(i[1]+1,i[2]-i[1]-1);
     this->name = tmp.substr(i[2]+1,i[3]-i[2]-1);
     this->Class = stoi(tmp.substr(i[3]+1,i[4]-i[3]-1));

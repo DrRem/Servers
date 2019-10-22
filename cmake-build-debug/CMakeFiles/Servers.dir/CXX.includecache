@@ -72,10 +72,6 @@ C:/Program Files/MySQL/MySQL Server 8.0/include/mysql_time.h
 
 C:/Program Files/MySQL/MySQL Server 8.0/include/mysql_version.h
 
-E:/VSObj/Servers/Date.cpp
-Date.h
-E:/VSObj/Servers/Date.h
-
 E:/VSObj/Servers/Date.h
 SqlLinker.h
 E:/VSObj/Servers/SqlLinker.h
@@ -100,5 +96,15 @@ E:/VSObj/Servers/windows.h
 unistd.h
 E:/VSObj/Servers/unistd.h
 
+E:/VSObj/Servers/Student.h
+Date.h
+E:/VSObj/Servers/Date.h
+
 E:/VSObj/Servers/get_len.h
+
+E:/VSObj/Servers/main.cpp
+Student.h
+E:/VSObj/Servers/Student.h
+Socks.h
+E:/VSObj/Servers/Socks.h
 
