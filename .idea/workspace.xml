@@ -13,8 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="89e89e07-0c16-4cf3-8346-52375e0304d1" name="Default Changelist" comment="ver0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Student.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Socks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/Socks.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Servers.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Servers.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Servers.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -104,7 +104,12 @@
       <workItem from="1571663421499" duration="425000" />
       <workItem from="1571666526131" duration="4092000" />
       <workItem from="1571725476930" duration="11316000" />
-      <workItem from="1571752074562" duration="2390000" />
+      <workItem from="1571752074562" duration="3169000" />
+      <workItem from="1571790488043" duration="2283000" />
+      <workItem from="1571809216785" duration="1509000" />
+      <workItem from="1571839443026" duration="1901000" />
+      <workItem from="1571894602779" duration="761000" />
+      <workItem from="1571899140334" duration="3420000" />
     </task>
     <servers />
   </component>

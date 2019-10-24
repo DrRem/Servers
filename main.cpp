@@ -1,7 +1,7 @@
 #include "Student.h"
 #include "Socks.h"
 int main() {
-    while (1)
+    while (true)
     {
         SqlLinker linker;   //初始化SQL
         linker.CreateNewStudent("admin",1,0,"2000-01-01","localhost",'N',"admin","car");
@@ -18,9 +18,9 @@ int main() {
                 if (linker.Login(1, passwd.data())) {
                     linker.talk.SendMassage("welcome,admin!");
                     cout << "admin login!" << endl;
-                    const char *p = linker.talk.ListenTo();
-                    string c = p;
-                    linker.Display(stoi(c)); //遍历发送序列化字符窜
+                    //const char *p = linker.talk.ListenTo();
+                    //string c = p;
+                    //linker.Display(stoi(c)); //遍历发送序列化字符窜
                 } else {
                     linker.talk.SendMassage("password error!");
                     cout << " password error!" << endl;
@@ -52,9 +52,19 @@ int main() {
                         linker.talk.SendMassage("password error!");
                         cout << "User entered the wrong password..." << endl;
                     }
-                } else {
+                }else{
                     linker.talk.SendMassage("id not exist!");
                     cout << "User attempts to log in to an account that does not exist ..." << endl;
+                }
+            } else if (temp[0] == '3'){             //管理员操作
+                string id = car.substr(1);
+                cout<<"Administrator tries to get student information :"<<id<<endl;
+                if (linker.IfExist(stoi(id)) && stoi(id) != 1){
+                    linker.talk.SendMassage((linker.SearchStudent(stoi(id))).data());       //发送序列化字符窜
+                    cout << "successfully！:" << car << endl;
+                }else{
+                    linker.talk.SendMassage("id not exist!");
+                    cout << "Admin attempts to log in to an account that does not exist ..." << endl;
                 }
             } else {              //退出
                 linker.talk.SendMassage("bye~");
